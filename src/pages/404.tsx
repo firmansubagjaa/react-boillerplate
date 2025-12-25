@@ -1,7 +1,6 @@
 import { Container } from "@/components/ui/container";
-import { Empty, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
+import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@/components/ui/empty";
 import { TypographyH1, TypographyP } from "@/components/ui/typography";
-import { CircleX } from "lucide-react";
 
 const Error404 = () => {
     return (
