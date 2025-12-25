@@ -63,11 +63,11 @@
 <td>
 
 ### 🎨 UI & Styling
-- **Shadcn/UI** - Accessible components (Radix UI)
-- **Motion 12.23.26** - Animation library
-- **Lucide React** - Beautiful icon set
-- **Next Themes** - Dark mode support
-- **Sonner** - Toast notifications
+- **Shadcn/UI Components (44+)** - Beautiful, accessible UI components built with Radix UI
+- **Motion 12.23.26** - Production-ready animation library
+- **Lucide React** - Beautiful & consistent icon set
+- **Next Themes** - Dark mode support with toggle
+- **Sonner** - Beautiful toast notifications
 
 </td>
 <td>
@@ -216,27 +216,46 @@ src/
 This boilerplate includes **Shadcn/UI** components built with **Radix UI** primitives:
 
 <details>
-<summary><b>View all available components</b></summary>
+<summary><b>View all available components (44+)</b></summary>
 
-- ✅ Alert Dialog
-- ✅ Avatar
-- ✅ Button  
-- ✅ Calendar & Date Picker
-- ✅ Checkbox
-- ✅ Command Menu (cmdk)
-- ✅ Container
-- ✅ Dialog/Modal
-- ✅ Empty State
-- ✅ Form Components
-- ✅ Input
-- ✅ Label
-- ✅ Navigation Menu
-- ✅ Popover
-- ✅ Radio Group
-- ✅ Scroll Area
-- ✅ Separator
-- ✅ Tooltip
-- ✅ Typography
+- Alert ⭐ NEW
+- Alert Dialog
+- Avatar
+- Badge
+- Breadcrumb
+- Button & Button Group
+- Calendar & Date Picker
+- Card
+- Checkbox
+- Command (Command Palette)
+- Container
+- Dialog
+- Dropdown Menu ⭐ NEW
+- Empty State
+- Field (Forms)
+- Hover Card ⭐ NEW
+- Input & Input Group
+- Kbd (Keyboard Shortcuts) ⭐ NEW
+- Label
+- Native Select
+- Navigation Menu
+- Pagination
+- Popover
+- Radio Group
+- Scroll Area
+- Separator
+- Sheet (Slide-over)
+- Sidebar
+- Skeleton
+- Sonner (Toast)
+- Spinner
+- Switch ⭐ NEW
+- Table
+- Tabs ⭐ NEW
+- Textarea
+- Toggle & Toggle Group ⭐ NEW
+- Tooltip
+- Typography
 - And more...
 
 </details>

@@ -4,6 +4,7 @@ import Home from "@/pages/Home";
 import MotionDemo from "@/pages/MotionDemo";
 import MotionExamples from "@/pages/MotionExamples";
 import MotionHome from "@/pages/MotionHome";
+import ShadcnDemo from "@/pages/ShadcnDemo";
 import { createBrowserRouter } from "react-router";
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/motion-examples",
     element: <MotionExamples />,
+  },
+  {
+    path: "/shadcn-demo",
+    element: <ShadcnDemo />,
   },
   {
     path: "*",
