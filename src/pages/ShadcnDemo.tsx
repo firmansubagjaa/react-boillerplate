@@ -60,6 +60,7 @@ import { TypographyH1, TypographyH2, TypographyH3, TypographyH4, TypographyP, Ty
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, DropdownMenuCheckboxItem, DropdownMenuRadioGroup, DropdownMenuRadioItem } from "@/components/ui/dropdown-menu"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { Kbd } from "@/components/ui/kbd"
+import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer"
 import { toast } from "sonner"
 import { ThemeToggle } from "@/components/theme-toggle"
 
@@ -1298,6 +1299,88 @@ export default function ShadcnDemo() {
                                         <Kbd>
                                             <UserPlus className="h-3 w-3" />
                                         </Kbd>
+                                    </div>
+                                </CardContent>
+                            </Card>
+
+                            {/* Drawer - by emilkowalski */}
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle>Drawer (Vaul)</CardTitle>
+                                    <CardDescription>Mobile-friendly drawer by emilkowalski</CardDescription>
+                                </CardHeader>
+                                <CardContent className="space-y-4">
+                                    <div className="grid grid-cols-2 gap-3">
+                                        <Drawer>
+                                            <DrawerTrigger asChild>
+                                                <Button variant="outline" size="sm">Bottom ↑</Button>
+                                            </DrawerTrigger>
+                                            <DrawerContent>
+                                                <DrawerHeader>
+                                                    <DrawerTitle>Bottom Drawer</DrawerTitle>
+                                                    <DrawerDescription>From bottom with drag handle</DrawerDescription>
+                                                </DrawerHeader>
+                                                <div className="p-4"><p className="text-sm text-muted-foreground">Smooth animations & mobile gestures</p></div>
+                                                <DrawerFooter>
+                                                    <Button>Submit</Button>
+                                                    <DrawerClose asChild><Button variant="outline">Cancel</Button></DrawerClose>
+                                                </DrawerFooter>
+                                            </DrawerContent>
+                                        </Drawer>
+                                        <Drawer direction="top">
+                                            <DrawerTrigger asChild>
+                                                <Button variant="outline" size="sm">Top ↓</Button>
+                                            </DrawerTrigger>
+                                            <DrawerContent>
+                                                <DrawerHeader>
+                                                    <DrawerTitle>Top Drawer</DrawerTitle>
+                                                    <DrawerDescription>Slides from top</DrawerDescription>
+                                                </DrawerHeader>
+                                                <div className="p-4"><p className="text-sm text-muted-foreground">For notifications</p></div>
+                                                <DrawerFooter><DrawerClose asChild><Button>Close</Button></DrawerClose></DrawerFooter>
+                                            </DrawerContent>
+                                        </Drawer>
+                                        <Drawer direction="left">
+                                            <DrawerTrigger asChild>
+                                                <Button variant="outline" size="sm">← Left</Button>
+                                            </DrawerTrigger>
+                                            <DrawerContent>
+                                                <DrawerHeader>
+                                                    <DrawerTitle>Left Drawer</DrawerTitle>
+                                                    <DrawerDescription>Navigation drawer</DrawerDescription>
+                                                </DrawerHeader>
+                                                <div className="p-4"><p className="text-sm text-muted-foreground">Perfect for menus</p></div>
+                                                <DrawerFooter><DrawerClose asChild><Button>Close</Button></DrawerClose></DrawerFooter>
+                                            </DrawerContent>
+                                        </Drawer>
+                                        <Drawer direction="right">
+                                            <DrawerTrigger asChild>
+                                                <Button variant="outline" size="sm">Right →</Button>
+                                            </DrawerTrigger>
+                                            <DrawerContent>
+                                                <DrawerHeader>
+                                                    <DrawerTitle>Right Drawer</DrawerTitle>
+                                                    <DrawerDescription>Settings panel</DrawerDescription>
+                                                </DrawerHeader>
+                                                <div className="p-4 space-y-3">
+                                                    <p className="text-sm text-muted-foreground">Perfect for settings</p>
+                                                    <Drawer>
+                                                        <DrawerTrigger asChild>
+                                                            <Button size="sm" variant="outline">Nested Drawer</Button>
+                                                        </DrawerTrigger>
+                                                        <DrawerContent>
+                                                            <DrawerHeader>
+                                                                <DrawerTitle>Nested!</DrawerTitle>
+                                                                <DrawerDescription>Drawer inside drawer</DrawerDescription>
+                                                            </DrawerHeader>
+                                                            <div className="p-4"><p className="text-sm">Supports nesting! 🎉</p></div>
+                                                            <DrawerFooter><DrawerClose asChild><Button>Close</Button></DrawerClose></DrawerFooter>
+                                                        </DrawerContent>
+                                                    </Drawer>
+                                                </div>
+                                                <DrawerFooter><DrawerClose asChild><Button>Close</Button></DrawerClose></DrawerFooter>
+                                            </DrawerContent>
+                                        </Drawer>
                                     </div>
                                 </CardContent>
                             </Card>

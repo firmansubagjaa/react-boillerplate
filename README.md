@@ -63,11 +63,12 @@
 <td>
 
 ### 🎨 UI & Styling
-- **Shadcn/UI Components (44+)** - Beautiful, accessible UI components built with Radix UI
+- **Shadcn/UI Components (45+)** - Beautiful, accessible UI components built with Radix UI
 - **Motion 12.23.26** - Production-ready animation library
 - **Lucide React** - Beautiful & consistent icon set
 - **Next Themes** - Dark mode support with toggle
-- **Sonner** - Beautiful toast notifications
+- **Sonner** - Beautiful toast notifications (by emilkowalski)
+- **Vaul** - Mobile-friendly drawer component (by emilkowalski)
 
 </td>
 <td>
@@ -216,7 +217,7 @@ src/
 This boilerplate includes **Shadcn/UI** components built with **Radix UI** primitives:
 
 <details>
-<summary><b>View all available components (44+)</b></summary>
+<summary><b>View all available components (45+)</b></summary>
 
 - Alert ⭐ NEW
 - Alert Dialog
