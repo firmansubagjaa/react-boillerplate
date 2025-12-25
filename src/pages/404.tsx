@@ -4,18 +4,21 @@ import { TypographyH1, TypographyP } from "@/components/ui/typography";
 
 const Error404 = () => {
     return (
-        <Container className="flex items-center justify-center h-screen">
-            <Empty >
-                <EmptyHeader>
-                    <EmptyTitle>
-                        <TypographyH1>404</TypographyH1>
-                    </EmptyTitle>
-                    <EmptyDescription>
-                        <TypographyP>Page Not Found</TypographyP>
-                    </EmptyDescription>
-                </EmptyHeader>
-            </Empty>
-        </Container>
+        <>
+            <title>404 - Page Not Found | Tivity</title>
+            <Container className="flex items-center justify-center h-screen">
+                <Empty >
+                    <EmptyHeader>
+                        <EmptyTitle>
+                            <TypographyH1>404</TypographyH1>
+                        </EmptyTitle>
+                        <EmptyDescription>
+                            <TypographyP>Page Not Found</TypographyP>
+                        </EmptyDescription>
+                    </EmptyHeader>
+                </Empty>
+            </Container>
+        </>
     )
 }
 
